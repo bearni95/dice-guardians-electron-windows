@@ -1,1 +1,1 @@
-cp -r /tmp/electron-packager/win32-x64/dice-guardians-win32-x64/* ../electron-compiled/win32-x64/
+cp -r /tmp/electron-packager/win32-x64/dice-guardians-win32-x64/* ../electron-compiled/windows/

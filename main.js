@@ -2,9 +2,11 @@ const { app, BrowserWindow, Menu, remote } = require('electron')
 
 const serve = require('electron-serve')
 
+Menu.setApplicationMenu(false)
 
 require('update-electron-app')()
 
+const loadUrl = serve({directory: 'www'})
 
 
 async function createWindow () {
@@ -22,7 +24,6 @@ async function createWindow () {
   //await gitClone()
 
 
-  const loadUrl = serve({directory: 'www'})
 
 	await loadUrl(win)
 
